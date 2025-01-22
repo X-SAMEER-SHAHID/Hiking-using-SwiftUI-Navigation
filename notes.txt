@@ -1,0 +1,34 @@
+SwiftUI Navigation Learning Notes:
+
+1. NavigationStack
+   - Basic container for navigable content
+   - Manages navigation hierarchy and history
+   - Replaces older NavigationView in modern SwiftUI
+
+2. Navigation Modifiers
+   - .navigationDestination(for:destination:) 
+     * Used to define where navigation leads for specific data types
+     * Takes a data type and a view builder
+     * Example: .navigationDestination(for: Hike.self) { hike in ... }
+
+3. Navigation Elements
+   - NavigationLink
+     * Creates tappable elements that trigger navigation
+     * Can be bound to data
+   - .navigationTitle()
+     * Sets the title in the navigation bar
+
+4. Data-Driven Navigation
+   - Can pass entire models through navigation
+   - Allows for type-safe navigation using generics
+   - Makes it easy to show detail views for specific data types
+
+5. Best Practices
+   - Keep navigation logic separate from view content
+   - Use strong typing for navigation destinations
+   - Consider using navigation path for deep linking
+
+6. Additional Features
+   - Custom back buttons
+   - Programmatic navigation
+   - Navigation bar customization
